@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Roboto:wght@300;500&display=swap');
+
+
+body {
+  background-color: #181818;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+h1, h2, h3, h4 { 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #e9bf85;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ h1 { 
+  font-weight: 300; 
+  color: #FFF;
+  }
+ h2 { margin: 5rem 0 3rem; }
+
+h2::before, h2::after {
+    content: "";
+  display:inline-block;
+  height: 1px;
+  width: 15%;
+  background: rgb(0,0,0);
+}
+h2::before {
+  margin-right: 30px;
+background: linear-gradient(90deg, rgba(233,191,133,0) 0%, rgba(233,191,133,1) 100%);
+}
+h2::after {
+  margin-left: 30px;
+background: linear-gradient(90deg, rgba(233,191,133,1) 0%, rgba(233,191,133,0) 100%);
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 50vh;
+/*  min-height: 25rem;*/
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 2 px solid #e9bf85;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#logo {
+  width: 25%;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+#mpex { margin:auto; }
+
+
+form { 
+  width: 100%;
+  max-width:  853px; 
+  margin: 0 auto;
+  padding: 0;
+  color: #FFF;
+}
+#msg-submit {
+  border: black;
+  color: black;
+  background-color: #e9bf85;
+  transition: .5s;
+  padding: 10px 50px;
+  display: block;
+  margin:  auto;
+}
+#msg-submit:hover {
+  /*color: white;*/
+   background-color: #DC9C41;
+}
+input, textarea { background-color: blue; }
+
+.form-control:focus {
+  border-color: #e9bf85;
+  box-shadow: 0 0 0 0.2rem rgba(233, 191, 133, 0.25);
+} 
+
+  #carousel { width: 100%;
+  max-width:  853px; 
+  margin:auto; }
+
+
+
+
+
+
+
+
+
+
+
